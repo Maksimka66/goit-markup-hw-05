@@ -671,7 +671,7 @@ input::placeholder {
 }
 
 .review-form-field {
-  margin-bottom: 16px;
+  margin-bottom: 8px;
 }
 
 .review-form-label {
@@ -681,7 +681,7 @@ input::placeholder {
   letter-spacing: 0.04em;
   color: #8e8f99;
   display: block;
-  margin-bottom: 4px;
+  margin-bottom: 16px;
 }
 
 .review-form-input {
@@ -810,11 +810,8 @@ textarea::placeholder {
   background-color: #404bbf;
 }
 
-input:checked {
-  background-color: #404bbf;
-}
-
-input:checked ~ .span-checkbox {
+.visually-hidden:checked + .span-checkbox {
   border: none;
   fill: #f4f4fd;
+  background-color: #404bbf;
 }
