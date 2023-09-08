@@ -814,7 +814,7 @@ textarea::placeholder {
   background-color: #404bbf;
 }
 
-.checkbox-input:checked + .span-checkbox {
+input:checked + label > span {
   border: none;
   fill: #f4f4fd;
   background-color: #404bbf;
