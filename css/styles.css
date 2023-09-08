@@ -783,6 +783,7 @@ textarea::placeholder {
   justify-content: center;
   align-items: center;
   fill: transparent;
+  cursor: pointer;
 }
 
 .review-send {
@@ -807,4 +808,13 @@ textarea::placeholder {
 .review-send:hover,
 .review-send:focus {
   background-color: #404bbf;
+}
+
+input:checked {
+  background-color: #404bbf;
+}
+
+input:checked ~ .span-checkbox {
+  border: none;
+  fill: #f4f4fd;
 }
